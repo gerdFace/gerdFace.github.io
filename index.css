@@ -103,7 +103,7 @@ a {
 #page1 {
   display: table;
   height: 1000px;
-  background: url(https://cdn.pixabay.com/photo/2016/06/29/09/29/code-1486361_960_720.jpg) no-repeat center;
+  background: url(CodeBackground.jpg) no-repeat center;
   padding: 0;
   margin: 0;
   background-size: 100%; }
