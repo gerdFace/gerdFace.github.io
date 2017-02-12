@@ -1,8 +1,9 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 auto;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  overflow-x: hidden; }
 
 a {
   text-decoration: none; }
@@ -104,76 +105,96 @@ a {
   margin-right: 168px; }
 
 #page1 {
-  display: table;
+  display: block;
+  text-align: center;
+  margin: auto;
   z-index: 1;
   height: 100%;
   width: 100%;
-  background: url(CodeBackground.jpg);
-  padding: 0;
+  background: url(CodeBackground.jpg) no-repeat;
   position: fixed;
-  margin: 0;
   background-size: 100%; }
+
+#colLeft {
+  width: 50%;
+  float: right; }
+
+#colRight {
+  width: 50%;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  padding-left: 20%;
+  padding-top: 0; }
 
 h1 {
   color: #0080ff;
   text-align: center;
+  position: relative;
+  display: block;
   font-variant: small-caps;
   font-family: 'Lato', sans-serif;
   font-size: 400%;
-  padding-top: 100px;
-  margin-bottom: 0;
-  margin-top: 40px;
-  margin-right: 115px;
-  margin-left: 925px; }
+  padding-top: 30%;
+  padding-bottom: 0;
+  margin: 0; }
 
 #page1 p {
   color: white;
   text-align: center;
+  display: block;
+  position: relative;
   font-family: "Courier New";
   font-size: 115%;
-  margin-top: 150px;
-  margin-right: 190px;
-  margin-left: 1000px; }
+  padding: 0;
+  margin: 0;
+  margin-top: -25%; }
 
 .content {
-  position: absolute;
-  top: 325px;
+  position: relative;
+  display: block;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-size: 35px;
-  line-height: 40px;
+  font-size: 1.5vw;
   font-family: 'Lato', sans-serif;
   color: #ecf0f1;
-  height: 160px;
+  height: 25vh;
   overflow: hidden;
   color: white;
-  text-align: center;
   font-variant: small-caps;
-  margin-right: 115px;
-  margin-left: 1335px; }
+  padding: 0;
+  text-align: center;
+  display: block;
+  margin-top: 20%;
+  margin-bottom: 5%;
+  margin-left: 50%; }
 
 .visible {
   font-weight: 600;
   overflow: hidden;
-  height: 40px;
-  padding: 0; }
+  height: 30px;
+  padding: 0;
+  margin: 0; }
 
 .visible:before {
   content: '[';
-  left: 0px;
-  padding: 0px;
-  line-height: 40px; }
+  text-align: center;
+  left: 2vw;
+  padding: 0;
+  margin: 0; }
 
 .visible:after {
   content: ']';
-  right: 0px;
-  line-height: 40px; }
+  text-align: center;
+  right: 2vw;
+  padding: 0;
+  margin: 0; }
 
 .visible:after, .visible:before {
   position: fixed;
   top: 0;
   color: #0080ff;
-  font-size: 42px;
+  font-size: 100%;
   -webkit-animation-name: opacity;
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
@@ -182,10 +203,9 @@ h1 {
   animation-iteration-count: infinite; }
 
 .movinglist {
-  margin: 0px;
-  padding: 0px;
-  margin-right: 25px;
-  margin-left: 25px;
+  margin: 0;
+  padding: 0;
+  font-size: 2.5vb;
   text-align: center;
   list-style: none;
   -webkit-animation-name: change;
@@ -194,10 +214,6 @@ h1 {
   animation-name: change;
   animation-duration: 5s;
   animation-iteration-count: infinite; }
-
-.movinglist li {
-  line-height: 40px;
-  margin-top: 2px; }
 
 @-webkit-keyframes opacity {
   0%, 100% {
@@ -241,14 +257,13 @@ h1 {
   90%, 100% {
     -webkit-transform: translateY(-80.6%);
     transform: translateY(-80.6%); } }
-a#progress {
-  height: 0px;
-  width: 0px;
-  margin-top: 3000px; }
+#page2 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 auto; }
 
 #progress {
   margin-top: 1000px;
-  padding-top: 0;
   z-index: 2;
   position: relative;
   background-color: #00bbff;
@@ -256,7 +271,8 @@ a#progress {
   height: 1000px;
   width: 100%;
   text-align: center;
-  padding: 50px; }
+  padding: 65px;
+  overflow: hidden; }
 
 #progress h2 {
   color: white;
@@ -270,58 +286,71 @@ a#progress {
   margin-left: auto; }
 
 .classTable {
-  width: 900px;
-  margin-top: 0px;
-  margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto; }
-
-#courseraHTML {
-  height: 200px;
-  width: 300px;
-  float: left;
-  background-image: url(https://www.techchange.org/wp-content/uploads/2013/02/Coursera-Logo-cropped1.jpg);
-  background: 100%; }
-
-#courseraCSS {
-  height: 200px;
-  width: 300px;
-  float: left;
-  background-image: url(https://www.techchange.org/wp-content/uploads/2013/02/Coursera-Logo-cropped1.jpg);
-  background: 100%; }
-
-#javaLanguage {
-  height: 200px;
-  width: 300px;
+  padding: 10%;
+  opacity: 0.995753;
+  transform: matrix(0.99575, 0, 0, 0.99575, 0, 0);
   position: absolute;
-  top: 0;
-  left: 580px; }
+  top: 0px;
+  left: 0px; }
 
-#javaLanguage p {
-  z-index: 3;
+#classItem {
+  -webkit-transition-property: background-size;
+  -moz-transition-property: background-size;
+  -o-transition-property: background-size;
+  transition-property: background-size;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  float: left;
+  display: table-block;
+  text-align: center;
+  padding: 2.5%;
+  margin: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000; }
+
+#classItemTable {
+  display: table;
+  width: 100%;
+  height: 100%; }
+
+#mask {
+  display: none;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: #62a2bb;
+  opacity: 0.8; }
+
+#classInfo {
+  vertical-align: middle;
   position: relative;
-  margin-top: -75px; }
+  z-index: 3;
+  color: #fff !important; }
 
-#javaCore {
-  height: 200px;
-  width: 300px;
-  float: left; }
+#classItem #classInfo p, #classItem #classInfo a {
+  color: #fff !important;
+  text-shadow: 1px 1px 1px rgba(35, 35, 50, 0.2); }
 
-#androidStart {
-  height: 200px;
-  width: 300px;
-  float: left; }
-
-#androidProcesses {
-  height: 200px;
-  width: 300px;
-  padding-top: 50px;
-  float: left; }
-
-#androidData {
-  height: 200px;
-  width: 300px;
-  float: left; }
+#classItem #mask #courseraHTML {
+  display: block;
+  width: 79px;
+  height: 27px;
+  background: url(https://www.techchange.org/wp-content/uploads/2013/02/Coursera-Logo-cropped1.jpg) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  right: 5px;
+  bottom: 5px; }
 
 #contact {
   background-color: #0080ff;
