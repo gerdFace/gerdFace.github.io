@@ -353,7 +353,7 @@ h1 {
   height: 100%;
   z-index: 1;
   opacity: 0.2;
-  background-image: url("coursera.png");
+  background-image: url(coursera.png);
   background-repeat: no-repeat;
   background-position: 50% 0;
   -ms-background-size: cover;
@@ -375,7 +375,7 @@ h1 {
   height: 100%;
   z-index: 1;
   opacity: 0.2;
-  background-image: url("pluralsight-square-360.png");
+  background-image: url(pluralsight-square-360.png);
   background-repeat: no-repeat;
   background-position: 50% 0;
   -ms-background-size: cover;
